@@ -108,8 +108,6 @@ result = connection.execute(query, {'musicbrainz_usernames': tuple(usernames)})
 It is preferred to assign the query to a separate variable and not include it inside the
 `execute` call.
 
-TODO: Projects which don't use sqlalchemy
-
 ### Tests
 
 You should write tests for all new code that you write. If you update code, make sure that
