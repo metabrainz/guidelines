@@ -112,18 +112,19 @@ TODO: Projects which don't use sqlalchemy
 
 ### Tests
 
-You should write tests for all new methods that you write. If you update a method, make sure that
-tests for that method still pass, and write/remove tests as necessary for the change in functionality.
+You should write tests for all new code that you write. If you update code, make sure that
+tests still pass, and write/remove tests as necessary for any change in functionality.
 
-Tests for a module (`package/module.py`) go in a `test` subdirectory - `package/test/test_module.py`
+Tests for a module (`package/module.py`) go in a `test` package - `package/test/test_module.py`
 
-Database tests (for modules in `db`) can use the database. Inherit from `db.testing.DatabaseTestCase`
-to automatically reset the database at the end of each testcase.
+Database tests should automatically clear the database and recreate the database after each test
+to ensure that one test doesn't affect the behaviour of another. Each project should have a subclass
+of `TestCase` which you can inherit from to do this.
 
 Try and isolate tests as much as possible. If you have a utility function which transforms or validates
-and input, you can test this in isolation.
+an input, you can test this in isolation.
 
-Webserver tests don't need to write data to the database. Instead, you can use a mock to verify
+Web server tests don't need to write data to the database. Instead, you can use a mock to verify
 that the call to the database was made:
 
 ```python
