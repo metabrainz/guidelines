@@ -29,13 +29,41 @@ The general idea is to make the code within a project consistent and easy to int
 
 ### Docstrings
 
-Include docstrings in functions. This should say *what* the function does, its *inputs*,
+Documentation helps us understand what a function does without having to read its implementation.
+
+Include docstrings in functions. This should say *what* the function does, and its *inputs*
 and *outputs* or possible *failure states* (exceptions).
+
+If a function is very short (say, less than 5 lines) and its name documents what it does,
+a docstring may not be necessary.
 
 Unless otherwise stated, we use "Google-style" docstrings:
 https://google.github.io/styleguide/pyguide.html?showone=Comments#Comments.
 
-For flask application docstrings for views are turned into API Documentation
+An example of a docstring for a regular method:
+
+```python
+def frob(foo, bar=None):
+    """Frob a foo, with an optional bar operation.
+    An optional, more detailed description of this function if needed.
+
+    Args:
+        foo: The foo to be frobbed.
+        bar: If set, a callback to a bar operation to be applied after
+             the foo is frobbed.
+
+    Returns:
+        The new foo, after frobbing and baring.
+
+    Raises:
+        ValueError if the foo cannot be frobbed.
+```
+
+Take note that sentences always start with a capital letter and end with a .
+
+
+For flask application we use Sphinx with [autohttp.flask](https://pythonhosted.org/sphinxcontrib-httpdomain/)
+to generate documentation for webserver views.
 (See an example for AcousticBrainz at http://acousticbrainz.readthedocs.io/)
 
 View docstrings should be formatted to include query format and an example of the response:
@@ -55,18 +83,6 @@ View docstrings should be formatted to include query format and an example of th
   be >= 0
 :resheader Content-Type: *application/json*
 """
-```
-
-An example of a docstring for a regular method
-```python
-def frob(foo, bar=None):
-    """Frob a foo, with an optional bar operation
-       Args:
-           foo: the foo to be frobbed
-           bar: if set, a callback to a bar operation to be applied after
-                the foo is frobbed
-       Returns:
-           The new foo, after frobbing and baring
 ```
 
 
