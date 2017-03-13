@@ -21,6 +21,10 @@ should be reported there, under a specific project. Project list is located at
 https://tickets.metabrainz.org/secure/BrowseProjects.jspa. You will need to
 create a separate account to create new issues and interact with existing ones.
 
+Any problems or comments on these guidelines can also be reported using
+our bug tracker. File them under the 'Guidelines' component of the
+OTHER project: https://tickets.metabrainz.org/projects/OTHER
+
 Our developers use IRC for communication. You can join us in the [#metabrainz]
 (irc://irc.freenode.net/#metabrainz) channel on the [Freenode network]
 (https://freenode.net/). Feel free to come and say "Hi!" if you want to
