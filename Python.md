@@ -1,8 +1,4 @@
-# Python programming language
-
-The general suggestion of writing tests applies here. Try to test all of the
-code that is being written and don't delay that for later (it will not get
-easier).
+# Python programming guidelines
 
 ## Code style
 
@@ -45,6 +41,7 @@ An example of a docstring for a regular method:
 ```python
 def frob(foo, bar=None):
     """Frob a foo, with an optional bar operation.
+
     An optional, more detailed description of this function if needed.
 
     Args:
