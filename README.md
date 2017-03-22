@@ -7,7 +7,7 @@ to write code using the different programming languages or frameworks that we us
 ## Overview
 
 Everyone is welcome to contribute to any of the MetaBrainz projects.
-Imlpementing new features, fixing known issues or reporting new ones, improving
+Implementing new features, fixing known issues or reporting new ones, improving
 documentation, etc. There are plenty of ways to get involved in the development
 process.
 
