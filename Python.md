@@ -7,14 +7,13 @@ projects do not follow these guidelines exactly. We are pragmatic in our applica
 guidelines and try our best to follow them, but there will be deviations. When in doubt, follow
 the guidelines rather than copying existing code.
 
-As most of the other projects written in Python, we use [PEP 8]
-(https://www.python.org/dev/peps/pep-0008/).  We change some of the recomendations:
+As most of the other projects written in Python, we use [PEP 8](https://www.python.org/dev/peps/pep-0008/).
+We change some of the recomendations:
 
 * Maximum line length (79 characters). The general limit we have is somewhere around 120-130.
 
-*Reccomended video: "[Beyond PEP 8 -- Best practices for beautiful intelligible code]
-(https://www.youtube.com/watch?v=wf-BqAjZb8M)" by Raymond Hettinger at PyCon 2015,
-which talks about the famous P versus NP problem.*
+*Reccomended video: "[Beyond PEP 8 -- Best practices for beautiful intelligible code](https://www.youtube.com/watch?v=wf-BqAjZb8M)"
+by Raymond Hettinger at PyCon 2015, which talks about the famous P versus NP problem.*
 
 If the project has a `pylintrc` file, you can use pylint to check for potential style violations:
 
