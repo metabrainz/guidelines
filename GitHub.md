@@ -1,6 +1,6 @@
 # Using GitHub
 
-## The workflow
+## Submitting changes
 
 We follow the "typical" GitHub workflow when contributing changes:
 
@@ -15,3 +15,15 @@ We follow the "typical" GitHub workflow when contributing changes:
    like this: `MBS-4635: Allow replacing images`. **Not** `[MBS-4635] - Allow replacing images` or `Allow replacing images
    (MBS-4635)` or `MBS-4635`.
 5. :shipit:
+
+## Status checks and testing
+
+Most of the projects have a set of tests that are run on each pull request to make sure that changes don't break the
+*master* branch. These checks are mandatory in most cases.
+
+Apart from MusicBrainz, our projects don't have a release schedule. This means that changes are released as soon as they
+are ready. Keeping the *master* branch functional in this case is essential. If a change that breaks tests is merged, it
+will cause issues for all the developers working on a project. It should be very easy to undo something that has been done
+and rollback deployed version of a service.
+
+Checks are run automatically by Jenkins or other services depending on what projects decide to go with.
