@@ -33,7 +33,7 @@ If a function is very short (say, less than 5 lines) and its name documents what
 a docstring may not be necessary.
 
 Unless otherwise stated, we use "Google-style" docstrings:
-https://google.github.io/styleguide/pyguide.html?showone=Comments#Comments.
+https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings.
 
 An example of a docstring for a regular method:
 
