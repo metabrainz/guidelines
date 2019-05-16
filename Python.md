@@ -2,7 +2,7 @@
 
 ## Code style
 
-Note: While this is section describes an ideal style, we know that parts of MetaBrainz
+Note: While this section describes an ideal style, we know that parts of MetaBrainz
 projects do not follow these guidelines exactly. We are pragmatic in our application of the
 guidelines and try our best to follow them, but there will be deviations. When in doubt, follow
 the guidelines rather than copying existing code.
