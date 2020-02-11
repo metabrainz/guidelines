@@ -15,6 +15,8 @@ We follow the "typical" GitHub workflow when contributing changes:
    title of your pull request is descriptive. If you are fixing an issue that exists in our bug tracker reference it
    like this: `MBS-4635: Allow replacing images`. **Not** `[MBS-4635] - Allow replacing images` or `Allow replacing images
    (MBS-4635)` or `MBS-4635`.
+   If you are fixing several issues at once, reference it like this: `MBS-9477, MBS-10568, MBS-10569: DiscID tab improvements`.
+   In the rare case you are partially fixing an issue, reference it like this: `MBS-10365 (III): Convert EventList to react-table`.
 5. :shipit:
 
 ## Status checks and testing
