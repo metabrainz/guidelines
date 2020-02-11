@@ -28,10 +28,15 @@ You do not need to contact them yourself to make sure that they recieved your co
 When you have assigned a ticket to yourself, set its status to "In Progress" by clicking
 `Start Progress`. This shows others that you are actively working on a task.
 
-When you finish the task, open a Pull Request on the relavent project. See [GitHub.md] with
-additional information about how to name and submit a Pull Request. In Jira, click `Resolve Issue`
-to mark that a review has been submitted, and paste a link to the GitHub Pull Request URL as
-a comment.
+When you finish the task, open a _Pull Request_ on the relevant project.
+You may instead want to open it as a _draft_ if it cannot be merged yet,
+for example when it depends on another Pull Request.
 
-Once a pull request has been reviewed and merged by one of the project maintainers, it
-can be closed and marked as "Fixed".
+If you correctly followed [how to name and submit a Pull Request](GitHub.md),
+_GitHub Bot_ automatically marks in Jira that a review has been submitted,
+with a link to the GitHub Pull Request in a comment.
+Once a pull request has been reviewed and merged by one of the project maintainers,
+it automatically marks in Jira that it has been merged into the development branch.
+
+It is up to the project maintainers to mark tickets in beta testing or to close
+these as “Fixed” when the corresponding deployment steps have been completed.
