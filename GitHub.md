@@ -7,7 +7,8 @@ We follow the "typical" GitHub workflow when contributing changes:
 1. [Fork](https://help.github.com/articles/fork-a-repo/) a repository into your account.
 2. Create a new branch and give it a meaningful name. For example, if you are going to fix issue MBS-4635, branch can be
    called `mbs-4635` or `replace-image`.
-3. Make your changes and commit them with a [good description](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html). *You don't need to provide a lot
+3. Make your changes and commit them with a [good description](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+   ([more details](https://chris.beams.io/posts/git-commit/)). *You don't need to provide a lot
    of details, but make sure that people who look at the commit history afterwards can understand what you were changing
    and why.*
 4. [Create](https://help.github.com/articles/creating-a-pull-request/) a new pull request on GitHub. Make sure that
