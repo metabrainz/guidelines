@@ -4,7 +4,8 @@ MetaBrainz uses Jira to track bugs and tasks. It is hosted at https://tickets.me
 
 Each main MetaBrainz project has [its own project in Jira](https://tickets.metabrainz.org/secure/BrowseProjects.jspa).
 
-This document describes
+This document describes how to work on reported tickets a.k.a. issues.
+
 For information about how to report an issue in a MetaBrainz project,
 [see our wiki](https://wiki.musicbrainz.org/How_to_Report_an_Issue).
 
