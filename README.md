@@ -26,7 +26,7 @@ our bug tracker. File them under the 'Guidelines' component of the
 OTHER project: https://tickets.metabrainz.org/projects/OTHER
 
 Our developers use IRC for communication. You can join us in the
-[#metabrainz](irc://irc.freenode.net/#metabrainz) channel on the
-[Freenode network](https://freenode.net/). Feel free to come and say "Hi!" if
+[#metabrainz](ircs://irc.libera.chat:6697/metabrainz) channel on the
+[Libera.Chat network](https://libera.chat/). Feel free to come and say "Hi!" if
 you want to know more about the development process. More info about interesting
 ways we communicate with each other is available at https://wiki.musicbrainz.org/Communication.
