@@ -13,8 +13,7 @@ process.
 
 The source code for most MetaBrainz projects is hosted under the [MetaBrainz
 organization on GitHub](https://github.com/metabrainz). *There are some
-exceptions like [BookBrainz project](https://github.com/bookbrainz) or
-[AcousticBrainz GUI](https://github.com/MTG/acousticbrainz-gui).*
+exceptions like the [AcousticBrainz GUI](https://github.com/MTG/acousticbrainz-gui).*
 
 Our bug tracker is located at https://tickets.metabrainz.org/. All issues
 should be reported there, under a specific project. Project list is located at
