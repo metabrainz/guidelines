@@ -2,9 +2,9 @@
 
 ### Publishing ports
 
-By default, containers within the same docker-compose network are able to connect to services running
-on other containers on any port by using the container name, as long as the container is listening
-on 0:0:0:0.
+By default, containers within the same Docker Compose network are able to connect to services running
+on other containers on any port by using the container name, as long as the service running in the
+container is listening on `0.0.0.0` which usually is the default too.
 
 The [`EXPOSE` directive isn't needed](https://docs.docker.com/engine/reference/builder/#expose), although
 some tools ([such as the nginx proxy companion](https://github.com/nginx-proxy/acme-companion#step-3---proxied-containers))
