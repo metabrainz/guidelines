@@ -1,16 +1,31 @@
-## development docker-compose.yaml file
+# Docker guidelines
 
-### Publishing ports
+## `Dockerfile`
+
+When building an image that is running some services,
+use the [`EXPOSE` directive](https://docs.docker.com/engine/reference/builder/#expose),
+to document which ports the services are listening to.
+Some tools ([such as the nginx proxy companion](https://github.com/nginx-proxy/acme-companion#step-3---proxied-containers))
+use it to define a contract between different containers too.
+Not using this directive doesn’t prevent exposing those ports to the Docker network.
+
+## `docker-compose.yml`
+
+### Exposing ports
 
 By default, containers within the same Docker Compose network are able to connect to services running
 on other containers on any port by using the container name, as long as the service running in the
 container is listening on `0.0.0.0` which usually is the default too.
 
-The [`EXPOSE` directive isn't needed](https://docs.docker.com/engine/reference/builder/#expose), although
+The [`expose` configuration option](https://docs.docker.com/compose/compose-file/compose-file-v3/#expose)
+just makes this exposure more visible, and is used by
 some tools ([such as the nginx proxy companion](https://github.com/nginx-proxy/acme-companion#step-3---proxied-containers))
-use it to define a contract between different containers. Use it if you think it will be necessary.
+use it to define a contract between different containers.
+Use it to document how your containers are interacting.
 
-When publishing services in a docker-compose.yaml file, ports should be explicitly published to the
+### Publishing ports
+
+When publishing services in a `docker-compose.yml` file for development, ports should be explicitly published to the
 loopback interface, 127.0.0.1 to prevent docker from automatically binding them to 0.0.0.0
 (all interfaces, open to the world).
 For example, when using postgres or elasticsearch, we might want to make them available to developers, 
