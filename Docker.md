@@ -25,11 +25,13 @@ Use it to document how your containers are interacting.
 
 ### Publishing ports
 
-When publishing services in a `docker-compose.yml` file for development, ports should be explicitly published to the
-loopback interface, 127.0.0.1 to prevent docker from automatically binding them to 0.0.0.0
-(all interfaces, open to the world).
-For example, when using postgres or elasticsearch, we might want to make them available to developers, 
-but in the case that we deploy on a public server for testing we don't want them to be exposed.
+When publishing the ports of a service in a `docker-compose.yml` file for development, those ports
+should be explicitly published to the loopback interface `127.0.0.1` of the host, to prevent docker
+from automatically binding them to `0.0.0.0` (all interfaces of the host, open to the world).
+Publish ports of a non-public service only if you think it will be necessary for development.
+For example, when using `postgres` or `elasticsearch`, we might want to make them available to
+developers, but in the case that we deploy on a public server for testing we don't want them to be
+open to the world.
 
 Use something like this:
 
@@ -38,4 +40,4 @@ ports:
   - "127.0.0.1:5432:5432"
 ```
 
-In the case of the main HTTP entrypoint to the application, this can be bound to 0.0.0.0.
+In the case of the main HTTP entrypoint to the application, this can be bound to `0.0.0.0`.
