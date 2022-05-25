@@ -12,7 +12,7 @@ We change some of the recomendations:
 
 * Maximum line length (79 characters). The general limit we have is somewhere around 120-130.
 
-*Reccomended video: "[Beyond PEP 8 -- Best practices for beautiful intelligible code](https://www.youtube.com/watch?v=wf-BqAjZb8M)"
+*Recommended video: "[Beyond PEP 8 -- Best practices for beautiful intelligible code](https://www.youtube.com/watch?v=wf-BqAjZb8M)"
 by Raymond Hettinger at PyCon 2015, which talks about the famous P versus NP problem.*
 
 If the project has a `pylintrc` file, you can use pylint to check for potential style violations:
