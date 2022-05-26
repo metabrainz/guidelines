@@ -2,9 +2,10 @@
 
 ## `Dockerfile`
 
-When building an image that is running some services,
-use the [`EXPOSE` directive](https://docs.docker.com/engine/reference/builder/#expose),
-to document which ports the services are listening to. If the image will be used to run many
+When building an image that will be run by one (or many) container(s) providing (the same) services,
+use the [`EXPOSE` directive](https://docs.docker.com/engine/reference/builder/#expose)
+with mandatory ports only,
+to document which ports the services are necessarily listening to. If the image will be used to run many
 containers, some of which don't listen on a port, instead use the `expose` option in
 `docker-compose.yml` or the `--expose` flag to `docker run`.
 Some tools ([such as the nginx proxy companion](https://github.com/nginx-proxy/acme-companion#step-3---proxied-containers))
