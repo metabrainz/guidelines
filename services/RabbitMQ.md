@@ -16,3 +16,12 @@ In the event the RabbitMQ service is not accessible for some reason, it would pr
 If messages should not be prevented to be queued:
 * [ ] Document which data might be missing
 * [ ] Provide a plan to produce those messages later on or to deal without those
+
+
+## Examples
+
+* (No project currently follows these guidelines.)
+
+Look for [not closed tickets](https://tickets.metabrainz.org/issues/?jql=labels+=+rabbitmq-service-guidelines+AND+status+!=+Closed),
+with `rabbitmq-service-guidelines` label, and create missing ones
+for projects which are using RabbitMQ without following these guidelines.
