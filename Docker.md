@@ -7,7 +7,7 @@ use the [`EXPOSE` directive](https://docs.docker.com/engine/reference/builder/#e
 with mandatory ports only,
 to document which ports the services are necessarily listening to. If the image will be used to run many
 containers, some of which don't listen on a port, instead use the `expose` option in
-`docker-compose.yml` or the `--expose` flag to `docker run`.
+`docker-compose.yml` (see the below section for details) or the `--expose` flag to `docker run`.
 Some tools ([such as the nginx proxy companion](https://github.com/nginx-proxy/acme-companion#step-3---proxied-containers))
 use it to define a contract between different containers too.
 Not using this directive doesn’t prevent exposing those ports to the Docker network.
