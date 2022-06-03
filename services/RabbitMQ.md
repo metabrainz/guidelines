@@ -6,7 +6,12 @@ Any deviation from those should be documented.
 
 * [ ] Report connectivity issues through Docker logs and critical connectivity issues through Sentry too.
 * [ ] Separate settings for consumer and producer; it allows to smoothly switch to another RabbitMQ instance using shovels.
+  And to help with debugging, read the following parameters (not limited to) from settings:
+  * [ ] Acknowledgement mode (manual or automatic)
+  * [ ] Heartbeat timeout (if different from server’s default)
+  * [ ] Message protocol (AMQP 0-8, AMQP 0-9-1, AMQP 1.0, MQTT...)
 * [ ] Check for queues declaration before accessing those from both consumer and producer; it prevents getting stuck after switching to a new instance.
+* [ ] Name each connection with project and role so those can be individually identified in the RabbitMQ admin console.
 
 If queued messages should not be lost:
 * [ ] Document which data might be missing
@@ -16,7 +21,6 @@ In the event the RabbitMQ service is not accessible for some reason, it would pr
 If messages should not be prevented to be queued:
 * [ ] Document which data might be missing
 * [ ] Provide a plan to produce those messages later on or to deal without those
-
 
 ## Examples
 
