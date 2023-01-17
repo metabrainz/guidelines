@@ -24,7 +24,8 @@ If messages should not be prevented to be queued:
 
 ## Examples
 
-* SIR - still in development branch ([source code](https://github.com/metabrainz/sir/blob/master/docs/source/service/rabbitmq.rst))
+* Documentation page “[SIR > Service maintenance > RabbitMQ](https://sir.readthedocs.io/en/latest/service/index.html#rabbitmq-1)”
+  (still in development branch) <!-- TODO: replace /latest/ with /stable/ on release -->
 
 Look for [not closed tickets](https://tickets.metabrainz.org/issues/?jql=labels+=+rabbitmq-service-guidelines+AND+status+!=+Closed),
 with `rabbitmq-service-guidelines` label, and create missing ones
