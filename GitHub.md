@@ -29,7 +29,7 @@ We follow the "typical" GitHub workflow when contributing changes:
        ```
        MBS-10365 (III): Convert EventList to react-table
        ```
-     Properly referenced tickets will be updated automatically.
+     Properly referenced tickets will be automatically linked and updated in our bug tracker.
    </details>
 5. :shipit:
 
