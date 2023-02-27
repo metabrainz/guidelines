@@ -21,7 +21,7 @@ We follow the "typical" GitHub workflow when contributing changes:
        MBS-4635: Allow replacing images
        ```
        (Not `[MBS-4635] - Allow replacing images` or `Allow replacing images (MBS-4635)` or `MBS-4635`.)
-     * If you are fixing several issues at once, reference it like this:
+     * If you are fixing several issues at once, reference them like this:
        ```
        MBS-9477, MBS-10568, MBS-10569: DiscID tab improvements
        ```
