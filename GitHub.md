@@ -11,12 +11,26 @@ We follow the "typical" GitHub workflow when contributing changes:
    ([more details](https://chris.beams.io/posts/git-commit/)). *You don't need to provide a lot
    of details, but make sure that people who look at the commit history afterwards can understand what you were changing
    and why.*
-4. [Create](https://help.github.com/articles/creating-a-pull-request/) a new pull request on GitHub. Make sure that
-   title of your pull request is descriptive. If you are fixing an issue that exists in our bug tracker reference it
-   like this: `MBS-4635: Allow replacing images`. **Not** `[MBS-4635] - Allow replacing images` or `Allow replacing images
-   (MBS-4635)` or `MBS-4635`.
-   If you are fixing several issues at once, reference it like this: `MBS-9477, MBS-10568, MBS-10569: DiscID tab improvements`.
-   In the rare case you are partially fixing an issue, reference it like this: `MBS-10365 (III): Convert EventList to react-table`.
+4. [Create](https://help.github.com/articles/creating-a-pull-request/) a new pull request on GitHub.
+   Make sure that the title of your pull request is descriptive.
+   <details>
+   <summary><i>Click to toggle formats for referencing ticket(s) in pull request’s title</i></summary>
+
+     * If you are fixing an issue that exists in our bug tracker, reference it like this:
+       ```
+       MBS-4635: Allow replacing images
+       ```
+       (Not `[MBS-4635] - Allow replacing images` or `Allow replacing images (MBS-4635)` or `MBS-4635`.)
+     * If you are fixing several issues at once, reference them like this:
+       ```
+       MBS-9477, MBS-10568, MBS-10569: DiscID tab improvements
+       ```
+     * In the rare case you are partially fixing an issue, reference it like this:
+       ```
+       MBS-10365 (III): Convert EventList to react-table
+       ```
+     Properly referenced tickets will be automatically linked and updated in our bug tracker.
+   </details>
 5. :shipit:
 
 ## Status checks and testing
