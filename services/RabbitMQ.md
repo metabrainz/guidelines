@@ -24,6 +24,9 @@ If messages should not be prevented to be queued:
 
 ## Examples
 
+* Documentation page “[LB > Maintainer Documentation > RabbitMQ](https://listenbrainz.readthedocs.io/en/latest/maintainers/rabbitmq.html)”
+  (still in development branch) <!-- TODO: replace /latest/ with /stable/ on release -->
+
 * Documentation page “[SIR > Service maintenance > RabbitMQ](https://sir.readthedocs.io/en/latest/service/index.html#rabbitmq-1)”
   (still in development branch) <!-- TODO: replace /latest/ with /stable/ on release -->
 
