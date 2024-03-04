@@ -24,8 +24,11 @@ If messages should not be prevented to be queued:
 
 ## Examples
 
+* Documentation page “[LB > Maintainer Documentation > RabbitMQ](https://listenbrainz.readthedocs.io/en/latest/maintainers/rabbitmq.html)”
+  (still in development branch but already applicable to the release in production) <!-- TODO: replace /latest/ with /stable/ on release -->
+
 * Documentation page “[SIR > Service maintenance > RabbitMQ](https://sir.readthedocs.io/en/latest/service/index.html#rabbitmq-1)”
-  (still in development branch) <!-- TODO: replace /latest/ with /stable/ on release -->
+  (still in development branch but already applicable to the release in production) <!-- TODO: replace /latest/ with /stable/ on release -->
 
 Look for [not closed tickets](https://tickets.metabrainz.org/issues/?jql=labels+=+rabbitmq-service-guidelines+AND+status+!=+Closed),
 with `rabbitmq-service-guidelines` label, and create missing ones
