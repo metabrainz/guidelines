@@ -31,10 +31,10 @@ you want to know more about the development process. More info about interesting
 ways we communicate with each other is available at https://wiki.musicbrainz.org/Communication.
 
 ## AI use policy
-We don't allow blindly using AI tools in code contributions or communications, and discourage it in most cases.
+We don't allow blindly using AI tools in code contributions or communications, and discourage it in most cases.\
+If you do use LLMs as part of your workflow, **you must explicitly disclose it**.
 
-If you do use LLMs as part of your workflow, you must explicitly disclose it.
-Do not submit a PR you haven't personally tested; inability to explain your code is grounds for immediate rejection of the PR. 
+Do not submit a PR you haven't personally tested; inability to explain your code is grounds for immediate rejection of the PR.\
 We want to see *you* (not an LLM) show understanding of the issue and do all the problem solving.
 
 This is the core of our work as developers. Open-source prioritizes community, critical thinking and robust and long-lasting code over productivity and speed.
